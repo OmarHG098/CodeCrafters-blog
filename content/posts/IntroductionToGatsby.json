@@ -1,0 +1,6 @@
+{
+    "title": "Creando una página en Gatsby",
+    "date": "2025-13-03",
+    "body": "Gatsby es un framework moderno para construir sitios web rápidos y optimizados. En este ejemplo, te mostramos cómo crear una página básica en Gatsby usando el sistema de archivos y componentes de React.",
+    "codeSnippet": "import React from 'react';\n\nconst Pagina = () => (\n  <div>\n    <h1>Bienvenido a mi sitio Gatsby</h1>\n    <p>¡Este es un ejemplo de una página básica!</p>\n  </div>\n);\n\nexport default Pagina;"
+  }

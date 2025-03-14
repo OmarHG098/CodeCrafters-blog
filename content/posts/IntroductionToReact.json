@@ -1,0 +1,6 @@
+{
+    "title": "Introducción a React",
+    "date": "2025-03-13",
+    "body": "React es una biblioteca de JavaScript para construir interfaces de usuario...",
+    "codeSnippet": "const App = () => <h1>Hola, mundo!</h1>;"
+}
