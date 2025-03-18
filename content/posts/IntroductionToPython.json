@@ -2,5 +2,6 @@
     "title": "Introducción a Python",
     "date": "2023-10-02",
     "body": "Python es un lenguaje de programación versátil y fácil de aprender, ampliamente utilizado en desarrollo web, ciencia de datos y automatización. Aquí te mostramos un ejemplo básico de cómo definir una función y trabajar con listas.",
-    "codeSnippet": "def saludar(nombre):\n    return f'Hola, {nombre}!'\n\nnombres = ['Alice', 'Bob', 'Charlie']\nfor nombre in nombres:\n    print(saludar(nombre))"
+    "codeSnippet": "def saludar(nombre):\n    return f'Hola, {nombre}!'\n\nnombres = ['Alice', 'Bob', 'Charlie']\nfor nombre in nombres:\n    print(saludar(nombre))",
+    "language": "python"
   }

@@ -31,6 +31,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 date
                 body
                 codeSnippet
+                language
               }
             }
             name

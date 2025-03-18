@@ -1,12 +1,13 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 
+
 const HomePage = ({ data }) => {
   const posts = data.allFile.edges;
 
   return (
     <div>
-      <h1>Mis Posts</h1>
+      <h1>Contenido</h1>
       <ul>
         {posts.map(({ node }) => {
           const post = node.fields.postData;
