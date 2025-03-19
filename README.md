@@ -25,7 +25,7 @@ Con esta preparación, me sentí listo para abordar el proyecto y cumplir con lo
 <p>En gatsby-node.js, realicé una consulta GraphQL para obtener todos los archivos JSON y luego usé la función createPage de Gatsby para generar una página para cada post. Cada página se crea utilizando un template (blog-post.js), y se le pasa el slug como contexto para que pueda consultar los datos específicos de cada post.</p>
 
 <h3>Resaltado de sintaxis para fragmentos de código</h3>
-<p>Para implementar el resaltado de sintaxis en los fragmentos de código, utilicé la librería Highlight.js. Esta librería es fácil de integrar y ofrece una amplia variedad de temas para personalizar la apariencia del código, importé Highlight.js y un tema CSS en el componente blog-post.js, inicialicé Highlight.js en el hook useEffect para aplicar el resaltado al cargar el componente, y me aseguré que los fragmentos de código estuvieran envueltos en las etiquetas `<pre>` y `<code>` con la clase del lenguaje correspondiente.
+<p>Para implementar el resaltado de sintaxis en los fragmentos de código, utilicé la librería Highlight.js. Esta librería es fácil de integrar y ofrece una amplia variedad de temas para personalizar la apariencia del código, importé Highlight.js y un tema CSS en el componente blog-post.js, inicialicé Highlight.js en el hook useEffect para aplicar el resaltado al cargar el componente, y me aseguré que los fragmentos de código estuvieran envueltos en las etiquetas 'pre' y 'code' con la clase del lenguaje correspondiente.
 
 <h3>Desafíos y soluciones</h3>
 Durante el desarrollo del proyecto, me encontré con algunos desafíos:
@@ -34,6 +34,6 @@ Durante el desarrollo del proyecto, me encontré con algunos desafíos:
 <li> Generación dinámica de páginas:Tuve dificultades para entender cómo usar gatsby-node.js para generar páginas dinámicas. Después de estudiar ejemplos y consultar con Deepseek, logré implementar la lógica necesaria. </li>
 <li>Integración de Highlight.js: Al integrar Highlight.js, inicialmente no se aplicaba el resaltado. Descubrí que necesitaba llamar a hljs.highlightAll() dentro de useEffect para asegurarme de que el DOM estuviera listo.</li>
 Optimización SEO con React Helmet:
-<li>Para hacer la página SEO-friendly, integré React Helmet en los componentes de la página principal (HomePage) y de los posts (BlogPost). Esto me permitió agregar metadatos dinámicos, como títulos y descripciones, para mejorar la visibilidad en motores de búsqueda y redes sociales. Aprendí a usar etiquetas como <title> y <meta> para personalizar la información de cada página. <li>
+<li>Para hacer la página SEO-friendly, integré React Helmet en los componentes de la página principal (HomePage) y de los posts (BlogPost). Esto me permitió agregar metadatos dinámicos, como títulos y descripciones, para mejorar la visibilidad en motores de búsqueda y redes sociales. Aprendí a usar etiquetas como 'title' y 'meta' para personalizar la información de cada página. </li>
 </ol>
 
