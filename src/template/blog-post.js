@@ -12,13 +12,21 @@ const BlogPost = ({ data }) => {
   }, []); 
 
   return (
-    <div>
-      <h1>{post.title}</h1>
-      <p>{post.date}</p>
-      <p>{post.body}</p>
-      <pre>
-        <code className={post.language}>{post.codeSnippet}</code>
-      </pre>
+    <div className="container my-5">
+      <div className="row justify-content-center">
+        <div className="col-lg-8">
+          <h1 className="mb-4">{post.title}</h1>
+          <p className="text-muted mb-4">{post.date}</p>
+          <p className="lead mb-4">{post.body}</p>
+          <div className="card mb-4">
+            <div className="card-body">
+              <pre className="m-0">
+                <code className={post.language}>{post.codeSnippet}</code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

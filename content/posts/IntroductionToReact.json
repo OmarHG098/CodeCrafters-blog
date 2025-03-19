@@ -1,6 +1,6 @@
 {
     "title": "Introducción a React",
-    "date": "2025-03-13",
+    "date": "2024-03-11",
     "body": "React es una biblioteca de JavaScript para construir interfaces de usuario...",
     "codeSnippet": "const App = () => <h1>Hola, mundo!</h1>;",
     "language": "javascript"
