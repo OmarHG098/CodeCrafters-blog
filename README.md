@@ -1,49 +1,30 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
+<h2>Introducción</h2>
 
-## 🚀 Quick start
+Antes de comenzar este proyecto, ya tenía experiencia previa trabajando con React.js, lo que me permitió entender rápidamente los conceptos básicos de Gatsby, ya que está construido sobre éste. Sin embargo, Gatsby introduce nuevas características y flujos de trabajo, como el uso de GraphQL para la gestión de datos y la generación de páginas estáticas.
 
-1.  **Create a Gatsby site.**
+### Para familiarizarme con Gatsby, dediqué tiempo a:
+<ol>
+  <li> Leer la documentación oficial: La documentación de Gatsby es muy completa y me ayudó a entender cómo funciona el framework, desde la creación de páginas hasta la consulta de datos con GraphQL. </li>
+  <li> Ver tutoriales en YouTube: Los tutoriales prácticos me permitieron ver ejemplos reales de cómo estructurar un proyecto y resolver problemas comunes. </li>
+  <li> Resolver dudas con inteligencia artificial: Herramientas como Deepseek me ayudaron a aclarar conceptos y a encontrar soluciones rápidas a problemas específicos. </li> 
+</ol>
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+Con esta preparación, me sentí listo para abordar el proyecto y cumplir con los requisitos planteados.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+<h3>Estructura del proyecto y consulta de datos con GraphQL</h3>
+<p>El proyecto utiliza archivos JSON para almacenar la información de los posts, los cuales se encuentran en la carpeta content/posts. Para acceder a estos datos, configuré el plugin gatsby-source-filesystem en el archivo gatsby-config.js. Este plugin permite a Gatsby leer los archivos del sistema de archivos y convertirlos en nodos de GraphQL.</p>
 
-2.  **Start developing.**
+<p>Para crear los nodos utilicé la función `onCreateNode`. Esta función se ejecuta cada vez que se crea un nodo en Gatsby, y me permitió extraer el contenido de los archivos JSON.</p>
 
-    Navigate into your new site’s directory and start it up.
+<p>Con esta configuración, cada archivo JSON en la carpeta content/posts se convierte en un nodo de GraphQL, y su contenido se almacena en el campo postData. Luego, en los componentes o páginas, puedo consultar estos datos utilizando GraphQL.</p>
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
 
-3.  **Open the code and start customizing!**
+<h3>Generación de páginas con gatsby-node.js</h3>
+<p>Para generar páginas de manera dinámica, utilicé el archivo gatsby-node.js. Este archivo permite crear páginas programáticamente durante el proceso de compilación.</p>
 
-    Your site is now running at http://localhost:8000!
+<p>En gatsby-node.js, realicé una consulta GraphQL para obtener todos los archivos JSON y luego usé la función createPage de Gatsby para generar una página para cada post. Cada página se crea utilizando un template (blog-post.js), y se le pasa el slug como contexto para que pueda consultar los datos específicos de cada post.</p>
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+<h3>Resaltado de sintaxis para fragmentos de código</h3>
+Para implementar el resaltado de sintaxis en los fragmentos de código, utilicé la librería Highlight.js. Esta librería es fácil de integrar y ofrece una amplia variedad de temas para personalizar la apariencia del código.
 
-4.  **Learn more**
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
