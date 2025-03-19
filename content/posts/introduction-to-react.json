@@ -1,0 +1,7 @@
+{
+    "title": "Creando un componente básico en React",
+    "date": "2025-14-03",
+    "body": "React es una biblioteca de JavaScript ampliamente utilizada para construir interfaces de usuario interactivas. En este ejemplo, te mostramos cómo crear un componente básico en React utilizando JSX y funciones de componentes.",
+    "codeSnippet": "import React from 'react';\n\nconst MiComponente = () => (\n  <div>\n    <h1>¡Hola, mundo!</h1>\n    <p>Este es un componente básico en React.</p>\n  </div>\n);\n\nexport default MiComponente;",
+    "language": "javascript"
+  }
